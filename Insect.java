@@ -1,4 +1,4 @@
-public class Insect {
+public class extends Insect {
     // Bees, Spider Mites, Snails, Worms, Slugs
     private String species;
     private String color;
