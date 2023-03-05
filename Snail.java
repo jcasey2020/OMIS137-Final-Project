@@ -1,8 +1,8 @@
 public class Snail extends Insect {
     private String plantFood;
-    private Move moveType = Move.Crawl;
+    private Insect.Move moveType = Insect.Move.Crawl;
 
-    public Snail(String species, String color, boolean canFly, String plantType, Move moveType) {
+    public Snail(String species, String color, boolean canFly, String plantType, Insect.Move moveType) {
         super(species, color, canFly);
         this.plantFood = plantType;
         this.moveType = moveType;

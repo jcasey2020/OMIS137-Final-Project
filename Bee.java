@@ -1,8 +1,8 @@
 public class Bee extends Insect {
     private String plantType;
-    private Move moveType = Move.Fly;
+    private Insect.Move moveType = Insect.Move.Fly;
 
-    public Bee(String species, String color, boolean canFly, String plantType, Move moveType) {
+    public Bee(String species, String color, boolean canFly, String plantType, Insect.Move moveType) {
         super(species, color, canFly);
         this.plantType = plantType;
         this.moveType = moveType;

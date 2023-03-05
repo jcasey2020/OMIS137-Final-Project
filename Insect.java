@@ -28,4 +28,3 @@ public class Insect {
     public void setPlant() { this.food = food; }
 
 }
-

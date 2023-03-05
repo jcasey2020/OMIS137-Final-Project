@@ -1,0 +1,23 @@
+public class Herb extends Plant{
+
+    private String type;
+    //eg. species: tree, shrub, vine
+    //    type:    willow tree, hibiscus shrub, clingers (type of vine)
+
+    public Herb(String name, String species, int size, String color, int growthRate, String type){
+        super.setName(name);
+        super.setSpecies(species);
+        super.setSize(size);
+        super.setColor(color);
+        super.setGrowthRate(growthRate);
+        this.type = type;
+    }
+
+    public String getType(){
+        return this.type;
+    }
+
+    public void setType(String type){
+        this.type = type;
+    }
+}
