@@ -8,7 +8,7 @@ public class Insect extends Plant {
 
     public enum Move { Fly, Crawl, Climb }
 
-    public Insect() {}
+    public Insect(String species, String color, boolean canFly) {}
 
     public Insect(String species, String color, boolean canFly, Plant food) {
         this.species = species;
