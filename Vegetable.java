@@ -10,7 +10,7 @@ public class Vegetable extends Plant{
         setWateringFreq(1);
         this.harvestTime=3;
         this.timesHarvested=0;
-        this.predators="ladybugs";//adjust to predator
+        this.predator=new Snail("Snail","green",false, "vegtable", Insect.Move.Crawl);//adjust to predator
         produceVeggie=0;
     }
     public int getHarvestTime(){

@@ -3,10 +3,10 @@ import java.util.concurrent.Flow;
 public class Flower extends Plant {
     public Flower(){
         super();
-        this.predators="Slug";//or whatever we want flower predators to be
+        this.predator=new SpiderMite("spidermite","black",true, "Flower", Insect.Move.Fly);//or whatever we want flower predators to be
     }
-    public String getPredators(){
-        return this.predators;
+    public Insect getPredators(){
+        return this.predator;
     }
 }
     /*

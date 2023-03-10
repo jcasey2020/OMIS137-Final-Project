@@ -5,7 +5,7 @@ public class Plant {
     private boolean alive;
     private int age;
     private int plantSize; //keeps track of how big plant is/number of grow cycles
-    String predators;
+    Insect predator;
 
     public Plant(){
             this.wateringFreq=2;
