@@ -1,16 +1,60 @@
 public class Plant {
-    private String name, species, color;
-    private int size, growthRate;
+    //private String name, species, color;
+    //private int size, growthRate;
+    private int wateringFreq;
+    private boolean alive;
+    private int age;
+    private int plantSize; //keeps track of how big plant is/number of grow cycles
+    String predators;
 
-    public Plant(){}
+    public Plant(){
+            this.wateringFreq=2;
+            this.alive=true;
+            this.age=0;
+            this.plantSize=0;
+    }
+    public int getWateringFreq(){
+        return wateringFreq;
+    }
+    public void setWateringFreq(int wateringFreq){
+        this.wateringFreq=wateringFreq;
+    }
+    public boolean isAlive(){
+        return this.alive;
+    }
 
-    public Plant(String name, String species, String color, int size, int growthRate){
+    public int getAge(){
+        return this.age;
+    }
+
+    public int getPlantSize(){
+        return this.plantSize;
+    }
+
+    public void dayPassed(){
+        age++;
+    }
+
+    public void passAway(){
+        alive=false;
+    }
+
+    public void grow(){ //set to grow every three days
+        if(getAge()%3==0 && isAlive()) {
+            plantSize++;
+        }
+    }
+
+
+   /* public Plant(String name, String species, String color, int size, int growthRate){
         this.name = name;
         this.species = species;
         this.color = color;
         this.size = size;
         this.growthRate = growthRate;
     }
+
+
 
     public String getName(){
         return this.name;
@@ -23,6 +67,8 @@ public class Plant {
     public String getColor() {
         return color;
     }
+
+
 
     public int getSize(){
         return this.size;
@@ -51,4 +97,6 @@ public class Plant {
     public void setGrowthRate(int growthRate) {
         this.growthRate = growthRate;
     }
+
+    */
 }

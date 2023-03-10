@@ -1,6 +1,15 @@
 import java.util.concurrent.Flow;
 
 public class Flower extends Plant {
+    public Flower(){
+        super();
+        this.predators="Slug";//or whatever we want flower predators to be
+    }
+    public String getPredators(){
+        return this.predators;
+    }
+}
+    /*
     private int numPetals;
 
     public Flower(){}
@@ -21,8 +30,11 @@ public class Flower extends Plant {
     public void setNumPetals(int numPetals){
         this.numPetals = numPetals;
     }
+    }
+
+
+     */
 
 
 
 
-}
