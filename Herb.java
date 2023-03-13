@@ -1,8 +1,11 @@
+import java.util.ArrayList;
+
 public class Herb extends Plant{
 
     private String type;
     //eg. species: tree, shrub, vine
     //    type:    willow tree, hibiscus shrub, clingers (type of vine)
+    public static ArrayList<Herb> herbs = new ArrayList<>();
 
     public Herb(String name, String species, int size, String color, int growthRate, String type){
         super.setName(name);

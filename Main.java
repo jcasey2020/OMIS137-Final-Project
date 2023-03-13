@@ -3,6 +3,7 @@ public class Main {
         Garden garden = new Garden();
         garden.populateGarden();
         garden.AddFlowers();
+        garden.AddFruit();
         garden.printGarden();
     }
 }

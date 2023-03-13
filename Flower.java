@@ -1,26 +1,28 @@
+import java.util.ArrayList;
 import java.util.concurrent.Flow;
 
 public class Flower extends Plant {
-    public Flower(){
+    public static ArrayList<Flower> flowers = new ArrayList<>();
+   /* public Flower(){
         super();
         this.predator=new SpiderMite("spidermite","black",true, "Flower", Insect.Move.Fly);//or whatever we want flower predators to be
     }
+    */
     public Insect getPredators(){
         return this.predator;
     }
-}
-    /*
-    private int numPetals;
 
-    public Flower(){}
+
+    private int numPetals;
 
     public Flower(String name, String species, int size, String color, int growthRate, int numPetals){
         super.setName(name);
         super.setSpecies(species);
-        super.setSize(size);
+        super.setPlantSize(size);
         super.setColor(color);
         super.setGrowthRate(growthRate);
         this.numPetals = numPetals;
+        this.predator=new SpiderMite("spidermite","black",true, "Flower", Insect.Move.Fly);//or whatever we want flower predators to be
     }
 
     public int getNumPetals(){
@@ -33,7 +35,7 @@ public class Flower extends Plant {
     }
 
 
-     */
+
 
 
 

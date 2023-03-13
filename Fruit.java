@@ -1,9 +1,12 @@
+import java.util.ArrayList;
+
 public class Fruit extends Plant{
     private String type;
     //eg. species would be "Apple", type would be "Granny Smith"
 
     private boolean edible;
     //eg. are the fruits edible yet? yes or no
+    public static ArrayList<Fruit> fruits = new ArrayList<>();
 
     public Fruit(String name, String species, int size, String color, int growthRate, String type, boolean edible){
         super.setName(name);
