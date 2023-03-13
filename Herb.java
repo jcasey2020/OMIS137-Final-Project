@@ -7,7 +7,7 @@ public class Herb extends Plant{
     public Herb(String name, String species, int size, String color, int growthRate, String type){
         super.setName(name);
         super.setSpecies(species);
-        super.setSize(size);
+        super.setPlantSize(size);
         super.setColor(color);
         super.setGrowthRate(growthRate);
         this.type = type;

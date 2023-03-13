@@ -1,6 +1,8 @@
 public class Plant {
-    //private String name, species, color;
-    //private int size, growthRate;
+    private String name;
+    private String species;
+    private String color;
+    private int growthRate;
     private int wateringFreq;
     private boolean alive;
     private int age;
@@ -44,6 +46,12 @@ public class Plant {
             plantSize++;
         }
     }
+
+    public void setName(String name) { this.name = name; }
+    public void setPlantSize(int plantSize) { this.plantSize = plantSize; }
+    public void setSpecies(String species) { this.species = species; }
+    public void setColor(String color) { this.color = color; }
+    public void setGrowthRate(int growthRate) { this.growthRate = growthRate; }
 
 
    /* public Plant(String name, String species, String color, int size, int growthRate){

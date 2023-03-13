@@ -8,7 +8,7 @@ public class Fruit extends Plant{
     public Fruit(String name, String species, int size, String color, int growthRate, String type, boolean edible){
         super.setName(name);
         super.setSpecies(species);
-        super.setSize(size);
+        super.setPlantSize(size);
         super.setColor(color);
         super.setGrowthRate(growthRate);
         this.type = type;
