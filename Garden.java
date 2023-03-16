@@ -8,7 +8,7 @@ public class Garden {
     public int cols = 20;
     public String emptyImage = " ";
     public String[][] garden;
-    //public static ArrayList<Flower> flowers = new ArrayList<Flower>();
+    //public int flowerRow;
 
     public Garden() {
         garden = new String[rows][cols];

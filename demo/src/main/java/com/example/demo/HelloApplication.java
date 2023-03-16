@@ -24,7 +24,6 @@ public class HelloApplication extends Application {
     }
 
      */
-
     @Override
     public void start(Stage primaryStage) throws Exception {
         GridPane gridPane = new GridPane();
